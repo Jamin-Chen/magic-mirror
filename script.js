@@ -1,4 +1,11 @@
 (function () {
+    var dayNames = ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY",
+                    "FRIDAY", "SATURDAY", "SUNDAY"];
+
+    var monthNames = ["January", "February", "March", "April", "May", "June",
+                      "July", "August", "September", "October", "November",
+                      "December"];
+
     function checkTime(i) {
         return (i < 10) ? "0" + i : i;
     }
@@ -7,11 +14,16 @@
         var today = new Date(),
             hours = checkTime(today.getHours()),
             minutes = checkTime(today.getMinutes()),
-            seconds = checkTime(today.getSeconds());
+            seconds = checkTime(today.getSeconds()),
+            day = dayNames[today.getDay()],
+            date = today.getDate(),
+            month = monthNames[today.getMonth()],
+            year = today.getFullYear();
         var ampm = hours < 12 ? "AM" : "PM";
         hours = hours % 12;
         hours = hours ? hours : 12;
-        document.getElementById('time').innerHTML = hours + ":" + minutes + ":" + seconds + " " + ampm;
+        document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds + " " + ampm;
+        document.getElementById("date").innerHTML = day + ", " + month + " " + date + ", " + year;
         t = setTimeout(function () {
             startTime()
         }, 500);
