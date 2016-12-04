@@ -5,6 +5,8 @@ body {
 #time {
 	padding-top: 3%;
 	color: white;
-	font-size: 100px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 120px;
 	text-align: center;
 }
