@@ -31,3 +31,9 @@ body {
 	color: white;
 	padding-bottom: 2cm;
 }
+
+#logo {
+	position: relative;
+	top: 5px;
+	height: 30px;
+}
