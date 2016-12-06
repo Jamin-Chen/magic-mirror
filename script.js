@@ -23,7 +23,7 @@
         hours = hours % 12;
         hours = hours ? hours : 12;
         document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds + " " + ampm;
-        document.getElementById("date").innerHTML = day + ", " + month + " " + date + ", " + year;
+        document.getElementById("date").innerHTML = day.bold() + ", " + month + " " + date + ", " + year;
         t = setTimeout(function () {
             startTime()
         }, 500);
