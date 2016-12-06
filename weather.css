@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'weather';
-    src:url('./icons/weather/artill_clean_icons-webfont.woff') format('woff'),
-        url('./icons/weather/artill_clean_icons-webfont.ttf') format('truetype'),
-        url('./icons/weather/artill_clean_icons.otf') format('opentype'),
-        url('./icons/weather/artill_clean_icons-webfont.eot') format('embedded-opentype');
+    src:url('./fonts/weather/artill_clean_icons-webfont.woff') format('woff'),
+        url('./fonts/weather/artill_clean_icons-webfont.ttf') format('truetype'),
+        url('./fonts/weather/artill_clean_icons.otf') format('opentype'),
+        url('./fonts/weather/artill_clean_icons-webfont.eot') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 #weather {
   position: absolute;
-  top: 5px;
+  top: 15px;
   right: 50px;
   text-align: right;
 }
@@ -18,7 +18,7 @@
 icon {
   color: #fff;
   font-family: weather;
-  font-size: 150px;
+  font-size: 100px;
   font-weight: normal;
   font-style: normal;
   line-height: 1.0;
@@ -77,19 +77,32 @@ icon {
 #weather temperature {
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  font-size: 100px;
+  font-size: 50px;
   font-weight: 300;
-  text-align: center;
-  padding-top: 300px;
+  text-align: right;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
 }
 
-
-#weather li {
+#weather location {
+    position:absolute;
+    top:90px;
+    right: 22px;
   font-family: 'Roboto', sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 100;
-  line-height: 50%;
+  color: #fff;
+  list-style-type: none;
+}
+
+
+#weather description {
+    position: absolute;
+    top: 110px;
+    right: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 25%;
   color: #fff;
   padding: 20px;
   list-style-type: none;
