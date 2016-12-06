@@ -4,11 +4,13 @@
 	<title>Mirror</title>
 	<link rel="stylesheet" href="main.css" type="text/css"/>
 	<link rel="stylesheet" type="text/css" href="fonts/roboto.css">
+	<link rel="stylesheet" type="text/css" href="weather.css">
 	<meta charset="utf-8">
 </head>
 <body>
 	<div id="time"></div>
 	<div id="date"></div>
+	<div id="weather"></div>
 	<div id="footer">
 		<p>
 			<img id = "logo" src='./images/logo.png'>
@@ -16,9 +18,14 @@
 		</p>
 	</div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script language="JavaScript" type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="simpleWeather.js"></script>
+<!--
 <script type="text/javascript">
         var gitHash = '<?php echo trim(`git rev-parse HEAD`) ?>';
 </script>
+-->
 <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="weather.js"></script>
 </html>
