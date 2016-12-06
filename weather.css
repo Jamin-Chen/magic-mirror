@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'weather';
-    src:url('./icons/weather/artill_clean_icons-webfont.eot') format('embedded-opentype'),
-        url('./icons/weather/artill_clean_icons-webfont.woff') format('woff'),
-        url('./icons/weather/artill_clean_icons-webfont.ttf') format('truetype');
-    src: url('./icons/weather/artill_clean_icons.otf') format('opentype');
+    src:url('./icons/weather/artill_clean_icons-webfont.woff') format('woff'),
+        url('./icons/weather/artill_clean_icons-webfont.ttf') format('truetype'),
+        url('./icons/weather/artill_clean_icons.otf') format('opentype'),
+        url('./icons/weather/artill_clean_icons-webfont.eot') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
