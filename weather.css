@@ -1,5 +1,8 @@
 @font-face {
     font-family: 'weather';
+    src:url('./icons/weather/artill_clean_icons-webfont.eot') format('embedded-opentype'),
+        url('./icons/weather/artill_clean_icons-webfont.woff') format('woff'),
+        url('./icons/weather/artill_clean_icons-webfont.ttf') format('truetype');
     src: url('./icons/weather/artill_clean_icons.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
@@ -7,7 +10,7 @@
 
 #weather {
   position: absolute;
-  top: 0px;
+  top: 5px;
   right: 50px;
   text-align: right;
 }
