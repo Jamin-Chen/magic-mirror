@@ -1,6 +1,11 @@
 $(document).ready(function() {
+  getWeather(); //Get the initial weather.
+  setInterval(getWeather, 600000); //Update the weather every 10 minutes.
+});
+
+function getWeather() {
   $.simpleWeather({
-    location: 'Los Angeles, CA 90007',
+    location: 'Los Angeles, CA',
     woeid: '',
     unit: 'f',
     success: function(weather) {
@@ -14,4 +19,4 @@ $(document).ready(function() {
       $("#weather").html('<p>'+error+'</p>');
     }
   });
-});
+ }
