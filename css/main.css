@@ -1,13 +1,13 @@
 body {
 	background-color: black;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-weight: 300;
 }
 
 #time {
 	padding-top: 25px;
 	padding-left: 7px;
-	color: white;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
 	font-size: 120px;
 	text-align: left;
 }
@@ -15,9 +15,6 @@ body {
 #date {
 	padding-top: 25px;
 	padding-left: 25px;
-	color: white;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
 	font-size: 40px;
 	text-align: left;
 }
@@ -25,12 +22,10 @@ body {
 #footer {
 	position: fixed;
 	bottom: 0;
-	width:100%;
+	width: 100%;
 	text-align: center;
-	font-family: 'Roboto', sans-serif;
-	font-weight:100;
+	font-weight: 100;
 	font-size: 30px;
-	color: white;
 	padding-bottom: 2cm;
 }
 
