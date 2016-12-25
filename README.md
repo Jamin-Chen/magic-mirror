@@ -16,4 +16,14 @@ For the [v1.0 release](https://github.com/Jamin-Chen/magic-mirror/tree/v1.0), we
 
 # Software
 
-Project inspired by Michael Teeuw's original [MagicMirror](http://michaelteeuw.nl/post/84026273526/and-there-it-is-the-end-result-of-the-magic).
+We used the RaspberryPi to host a local webserver with Apache. The RaspberryPi runs Raspbian OS, and on startup it boots into chromium's kiosk mode and displays the index.html webpage. The page uses HTML/CSS for visuals and Javascript for API calls and behind-the-scenes operations.
+
+# In Progress (
+* Creating a Facebook Messenger bot that will grant user interactivity. The bot will feature a basic AI and allow the user to send commands to the mirror.
+* News-scroller module that links to a major news site's RSS feed.
+* Reminders module.
+* Google Calendar integration.
+
+# Acknowledgements
+
+This project was inspired by Michael Teeuw's original [MagicMirror](http://michaelteeuw.nl/post/84026273526/and-there-it-is-the-end-result-of-the-magic) and would not have been possible without his excellent documentation and writeups.
