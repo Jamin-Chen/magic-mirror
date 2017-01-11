@@ -1,11 +1,11 @@
 $(document).ready(function() {
   getWeather(); //Get the initial weather.
-  setInterval(getWeather, 600000); //Update the weather every 10 minutes.
+  setInterval(getWeather, 60000 * config.refreshInterval); //Update the weather every 10 minutes.
 });
 
 function getWeather() {
   $.simpleWeather({
-    location: 'Los Angeles, CA',
+    location: config.location,
     woeid: '',
     unit: 'f',
     success: function(weather) {
